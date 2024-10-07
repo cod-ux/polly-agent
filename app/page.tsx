@@ -3,7 +3,7 @@ import ChatBot from "./components/ChatBot";
 
 const Home = () => {
   return (
-    <div className="">
+    <div data-theme="winter" className="container mx-auto">
       <ChatBot />
     </div>
   );

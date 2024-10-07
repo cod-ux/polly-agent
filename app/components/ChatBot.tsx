@@ -5,7 +5,7 @@ import ChatInput from "./ChatInput";
 
 const ChatBot = () => {
   return (
-    <div className="">
+    <div className="flex flex-col h-screen">
       <ChatHeader />
       <ChatMessages />
       <ChatInput />

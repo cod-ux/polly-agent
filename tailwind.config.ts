@@ -14,10 +14,13 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'send-icon': "url('/send.png')",
+      }
     },
   },
   daisyui: {
-    themes: ["light", "dark", "cupcake"],
+    themes: ["light", "dark", "winter"],
   },
   plugins: [daisyui],
 };
