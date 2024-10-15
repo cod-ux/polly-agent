@@ -12,23 +12,23 @@ interface MessageProps {
 const ChatMessageBox: React.FC<MessageProps> = ({ messages }) => {
   return (
     <>
-      <div className="flex-1 items-center p-2 overflow-y-auto border-2 justify-center w-5/6 mx-auto">
-        <div className="w-full h-full border-2 bg-slate-00 p-10">
+      <div className="flex-1 items-center p-2 overflow-y-auto border-8 justify-center w-5/6 mx-auto">
+        <div className="w-full h-full p-10">
           {messages.map((message, index) => {
+            let chatClassName = "";
             let bubbleClassName = "";
 
             if (message.sender == "user") {
-              bubbleClassName = "chat chat-end";
+              chatClassName = "chat chat-end p-2";
+              bubbleClassName = "chat-bubble chat-bubble-primary";
             } else if (message.sender == "bot") {
-              bubbleClassName = "chat chat-start";
+              chatClassName = "chat chat-start p-2";
+              bubbleClassName = "chat-bubble chat-bubble-primary";
             }
 
             return (
-              <div key={index} className={bubbleClassName}>
-                <div
-                  key={index}
-                  className="chat-bubble chat-bubble-primary text-blue-100"
-                >
+              <div key={index} className={chatClassName}>
+                <div key={index} className={bubbleClassName}>
                   {message.text}
                 </div>
               </div>
