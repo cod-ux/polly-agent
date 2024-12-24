@@ -18,7 +18,9 @@ const MarkdownRenderer: React.FC<MdProps> = ({
   }, [content]);
 
   return (
-    <p className={bubbleClass} dangerouslySetInnerHTML={{ __html: html }}></p>
+    <div className={`${bubbleClass} prose prose-base max-w-none prose-strong:font-bold prose-p:m-0`}>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+    </div>
   );
 };
 

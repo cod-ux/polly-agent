@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import type { Config } from "tailwindcss";
 import daisyui from "daisyui";
+import typography from "@tailwindcss/typography";
 
 const config: Config = {
   content: [
@@ -16,12 +17,15 @@ const config: Config = {
       },
       backgroundImage: {
         'send-icon': "url('/send.png')",
-      }
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
     },
   },
   daisyui: {
-    themes: ["light", "dark", "winter"],
+    themes: ["light", "dark", "winter", "cupcake", "corporate", "bumblebee", "synthwave"],
   },
-  plugins: [daisyui],
+  plugins: [daisyui, typography],
 };
 export default config;
