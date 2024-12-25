@@ -27,9 +27,12 @@ const ChatBot: React.FC = () => {
         sender: msg.sender,
         msg: msg.text,
       }));
-      const allMessages = [...previousMessages, { sender: "user", msg: message }];
+      const allMessages = [
+        ...previousMessages,
+        { sender: "user", msg: message },
+      ];
 
-      const response = await fetch("http://127.0.0.1:8000/api/chat/", {
+      const response = await fetch("http://0.0.0.0:8000/api/chat/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
