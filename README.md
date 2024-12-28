@@ -13,3 +13,11 @@ A policy research agent that uses research papers and web search to answer quest
 - Tailwind CSS
 - Daisy UI
 
+## Screenshots
+
+Display on computer:
+![computer-screenshot](screenshots/computer-screen.png)
+
+Display on mobile:
+![computer-screenshot](screenshots/mobile-screen.png)
+
