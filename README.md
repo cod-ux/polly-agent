@@ -21,5 +21,5 @@ A policy research agent that uses research papers and web search to answer quest
 
 ### Display on mobile:
 
-<img src="screenshots/mobile-screen.png" alt="Mobile Screenshot" width="300" />
+<img src="screenshots/mobile-screen.jpg" alt="Mobile Screenshot" width="300" />
 
