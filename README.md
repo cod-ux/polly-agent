@@ -17,9 +17,8 @@ A policy research agent that uses research papers and web search to answer quest
 
 ### Display on computer:
 
-<img src="screenshots/computer-screen.png" alt="Computer Screenshot" width="600" />
+<img src="screenshots/computer-screen.png" alt="Computer Screenshot" width="600" style="border: 2px solid black; border-radius: 8px;" />
 
 ### Display on mobile:
 
-<img src="screenshots/mobile-screen.jpg" alt="Mobile Screenshot" width="300" />
-
+<img src="screenshots/mobile-screen.jpg" alt="Mobile Screenshot" width="300" style="border: 2px solid black; border-radius: 8px;" />
