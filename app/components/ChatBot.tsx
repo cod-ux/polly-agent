@@ -32,7 +32,7 @@ const ChatBot: React.FC = () => {
         { sender: "user", msg: message },
       ];
 
-      const response = await fetch("http://31.187.72.163:8000/api/chat/", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/chat/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
